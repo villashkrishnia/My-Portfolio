@@ -1,0 +1,634 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: auto;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* bar in header*/
+
+.bars {
+    background-color: rgb(0, 0, 0);
+}
+
+.bars .fas {
+    position: fixed;
+    top: 0;
+    right: 0;
+    float: right;
+    font-size: 30px;
+    padding: 10px;
+    margin: 0;
+    z-index: 1;
+    color: rgb(252, 252, 252);
+}
+
+.bars .fas:hover {
+    font-size: 32px;
+    color: rgb(219, 20, 60);
+    cursor: pointer;
+}
+
+.bars .fas:active {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.bars::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* inside bar in header */
+
+.inside-bars {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    margin: auto;
+    padding-bottom: 100%;
+    background-color: rgb(73, 82, 82);
+    text-align: center;
+    z-index: +1;
+}
+
+.inside-bars div {
+    padding: 10px;
+}
+
+.inside-bars div img {
+    margin-bottom: 30px;
+    height: 80px;
+    width: 80px;
+}
+
+.inside-bars div img:hover {
+    margin-bottom: 30px;
+    height: 83px;
+    width: 83px;
+    cursor: pointer;
+    transition: height 0.2s, width 0.2s;
+}
+
+.inside-bars div img:active {
+    height: 80px;
+    width: 80px;
+}
+
+.inside-bars div a {
+    text-decoration: none;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.inside-bars div a:hover {
+    font-size: 55px;
+    color: rgb(255, 0, 0);
+    transition: font-size 0.3s, color 0.2s;
+}
+
+.inside-bars div a:active {
+    font-size: 50px;
+    transition: font-size 0.3s;
+}
+
+
+/* header */
+
+
+/* .top_1 {
+	background-color: rgb(138, 138, 138);
+	height: 150px;
+	padding: 50px 50px;
+}
+.top_1 ul{
+	text-decoration: none;
+	list-style-type:none;
+	padding-right:50px;
+}
+.top_1 ul li {	
+	display:block;
+	float:right;
+	padding:15px;
+	padding-top: 70px;
+		
+}
+.top_1 ul li a{
+	color:black;
+	font-size:28px;
+}
+
+.top_1 ul li a:hover {
+	color:rgb(39, 39, 39);
+	
+}
+.top_1 ul li a:active {
+	color:rgb(0, 50, 116);
+	
+} */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(95, 94, 94);
+}
+
+.header .left {
+    flex: 30%;
+    font-size: 70px;
+    /* background-color: rgb(156, 139, 139); */
+    padding-left: 35px;
+    padding-top: 35px;
+}
+
+.header .right {
+    flex: 70%;
+    /* background-color: crimson; */
+    padding: 20px;
+}
+
+.header .right div {
+    padding: 80px 0px 0px 600px;
+}
+
+.header .right a {
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.header .right a:hover {
+    color: rgb(14, 33, 143);
+}
+
+
+/* top navigaton bar */
+
+
+/* .sticky_top{
+	overflow: auto;
+	position:sticky; top:0; width:100%;
+} 
+.nav{
+	background-color: rgb(20, 36, 46);
+	list-style-type:none;
+	margin:0%;
+	padding:0%;
+	overflow: auto;
+}
+.nav a {
+	display: block;
+	float:left;
+	color:white;
+	text-align: center;
+	padding:12px;
+	font-size:30px;
+	text-decoration: none;
+	overflow: auto;	
+}
+.nav a:hover{
+	background-color: black;
+	overflow: auto;
+} */
+
+.sticky_nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(57, 175, 110);
+}
+
+.sticky_nav a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.sticky_nav a:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 28px;
+    transition: color 0.5s, background-color 0.5s, font-size 0.5s;
+}
+
+
+
+
+/* .projects_name{
+	width:20%;
+	margin:0;
+	padding:0;
+	overflow: auto;	
+}
+
+.projects_name ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow: auto;
+	background-color: rgb(47, 124, 2);
+	height:700px;
+
+}
+
+.projects_name li a {
+		  
+	display: block;	
+	color:white;
+	text-align: center;
+	padding:20px;
+	font-size:20px;
+	text-decoration: none;
+	border-bottom: 1px solid rgb(80, 78, 78);
+	margin: 0;
+	overflow: auto;	
+}
+.projects_name li a:hover {
+	background-color: rgb(0, 0, 0);
+	font-size: 22px;
+	overflow: auto;
+}
+.projects_name li a:active {
+	background-color: rgba(0, 0, 0, 0.644);
+	overflow: auto;
+}
+
+.projects_dis{
+  width:80%;
+  margin:0%;
+  padding:0%;
+  overflow: auto;
+}
+.projects {
+	 float:left;
+	 overflow: auto;
+}  
+ iframe {
+	 height:700px;
+	 width: 1078px;
+	 border:none;
+	 overflow: auto;
+} */
+
+
+/* project section flex */
+#Projects{
+    padding-left:30px;
+}
+
+.project_sec {
+    display: flex;
+    flex-wrap: wrap;
+    height:700px;
+    background-color: rgba(83, 146, 111,0.4);
+}
+
+.projects_name {
+    /* flex-direction: column; */
+    flex: 25%;
+}
+
+.projects_name ul {
+    /* background-color: rgb(68, 131, 9); */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.projects_name ul li a {
+    display: block;
+    color: black;
+    border-bottom: 1px solid rgb(42, 42, 42);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.projects_name ul li a:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 28px;
+    transition: color 0.6s, background-color 0.4s, font-size 0.4s;
+}
+
+.projects_dis {
+    flex: 75%;
+}
+/* project home */
+#Project-Home{
+    font-size: 20px;
+}
+
+/* Task-Tracking-Syatem styles */
+
+#Task-Tracking-System p {
+    font-size: 18px;
+    margin: 0 180px 30px 180px;
+}
+
+#Task-Tracking-System p span {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+}
+
+#Task-Tracking-System a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Task-Tracking-System a:hover {
+    color: tan;
+    font-size: 19px;
+    transition: font-size 0.1s;
+}
+
+#Task-Tracking-System a:active {
+    color: teal;
+}
+
+
+/* My-Portfolio styles */
+
+
+
+#My-Portfolio p {
+    font-size: 18px;
+    margin: 0 180px 30px 180px;
+}
+
+#My-Portfolio p span {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+}
+
+#My-Portfolio a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#My-Portfolio a:hover {
+    color: tan;
+    font-size: 19px;
+    transition: font-size 0.1s;
+}
+
+#My-Portfolio a:active {
+    color: teal;
+}
+
+
+/* todo-cli-application styles */
+
+
+
+#Todo-CLI-Application p {
+    font-size: 18px;
+    margin: 0 180px 30px 180px;
+}
+
+#Todo-CLI-Application p span {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+}
+
+#Todo-CLI-Application p a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Todo-CLI-Application p a:hover {
+    color: tan;
+    font-size: 19px;
+    transition: font-size 0.1s;
+}
+
+#Todo-CLI-Application p a:active {
+    color: teal;
+}
+
+#Todo-CLI-Application h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.projects_dis div:not(#Project-Home) {
+    display: none;
+}
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    height: 200px;
+    background-color: rgb(53, 53, 53);
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* .footer .left{flex:30%; }
+.footer .middle{flex:40%;}
+.footer .right{flex:30%;} */
+
+.footer .right a {
+    color: black;
+    display: inline-block;
+    padding-left: 40px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.footer .right a:hover {
+    color: rgb(13, 29, 121);
+    font-size: 32px;
+}
+
+.footer .right a:active {
+    font-size: 30px;
+}
+
+.footer .left a {
+    color: rgb(22, 1, 1);
+    font-size: 22px;
+    text-decoration: none;
+}
+.footer .middle {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+@media (max-width:860px){
+    /* media header */
+    .header {
+        flex-direction: column;
+    }  
+    .header .left {
+        font-size: 39px;
+        padding-left: 13px;
+        padding-top: 6px;
+    }   
+    .header .right {
+        margin: auto;
+        margin-bottom: -19px;
+    }   
+    .header .right div {
+        padding: initial;
+    }   
+    .header .right a {
+        font-size: 17px;
+    }
+/* media nav bar */
+    .sticky_nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .sticky_nav a {
+        padding: 11px;
+        font-size: 26px;
+    }
+
+
+/* media project section================================================================= */
+/* media project section================================================================= */
+ 
+#Projects{
+    padding-left:0;
+    text-align: center;
+}
+.project_sec {
+    flex-direction: column;
+    height: auto;
+}
+
+
+.projects_name ul li a {
+    text-align: center;
+    padding: 8px;
+    font-size: 23px;
+}
+
+.projects_name ul li a:hover {
+    font-size: 23px;
+}
+
+/* project home */
+#Project-Home{
+    display:none;
+}
+
+
+/* Task-Tracking-Syatem styles */
+
+#Task-Tracking-System p {
+    font-size: 17px;
+    margin: initial;
+    padding: 11px;
+    text-align: justify;
+}
+
+#Task-Tracking-System p span {
+    font-size: 19px;
+ 
+}
+
+
+/* My-Portfolio styles */
+
+
+
+#My-Portfolio p {
+    font-size: 17px;
+    margin: initial;
+    padding: 11px;
+    text-align: justify;
+}
+
+#My-Portfolio p span {
+    font-size: 19px;
+}
+
+
+
+/* todo-cli-application styles */
+
+
+
+#Todo-CLI-Application p {
+    font-size: 17px;
+    margin: initial;
+    padding: 11px;
+    text-align: justify;
+}
+
+#Todo-CLI-Application p span {
+    font-size: 19px;
+}
+
+/* media footer */
+.footer {
+    flex-direction: column;
+    font-size: 25px;
+    height: 200px;
+    background-color: rgb(53, 53, 53);
+    align-items: center;
+}
+.footer .left{
+    text-align: center;
+    font-size:15px;
+}
+.footer .left a {
+    font-size:15px;
+    color: rgb(22, 1, 1);
+}
+
+.footer .right a {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.footer .right a:hover {
+    color: rgb(13, 29, 121);
+    font-size: 20px;
+}
+
+.footer .right a:active {
+    font-size: 20px;
+}
+
+
+.footer .middle{
+    font-size: 15px;
+}
+
+}

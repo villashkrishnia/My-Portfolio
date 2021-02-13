@@ -1,0 +1,232 @@
+/* skills area */
+
+
+.skills {
+    /* background-color: black;   */
+    color: whitesmoke;
+    overflow: auto;
+    margin-top: 200px;
+}
+.skills h2{
+    padding-left:30px; 
+}
+
+.skills .main {
+    padding-left: 61px;
+}
+
+.skills .main h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 19px;
+}
+
+.skills div[id] {
+    border-radius: 10px;
+    height: 11px;
+    animation-delay: 0.1s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    background-color: tomato;
+}
+
+.skills .cs {
+    width: 90%;
+    height: 11px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #979797;
+}
+
+.skills #a {
+    width: 0;
+}
+
+.skills #b {
+    width: 0;
+}
+
+.skills #c {
+    width: 0;
+}
+
+.skills #d {
+    width: 0;
+}
+
+.skills #e {
+    width: 0;
+}
+
+.skills #f {
+    width: 0;
+}
+
+.skills #g {
+    width: 0;
+}
+
+.skills #h {
+    width: 0;
+}
+
+.skills #i {
+    width: 0;
+}
+
+.skills #j {
+    width: 0;
+}
+
+.skills #k {
+    width: 0;
+}
+
+.skills #l {
+    width: 0;
+}
+
+.skills #m {
+    width: 0;
+}
+
+@keyframes a {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes b {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes c {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes d {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes e {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes f {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes g {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes h {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes i {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes j {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes k {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes l {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes m {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@media (max-width:860px){
+    .skills h2{
+        padding-left:0;
+        text-align: center; 
+    }
+    
+    .skills .main {
+        padding-left: 16px;
+    }
+    
+    .skills .main h1 {
+        font-size: 13px;
+        font-family: cursive;
+    }
+    
+    .skills div[id] {
+        height: 4px;
+    }
+    
+    .skills .cs {
+        height: 4px;
+    }
+}
