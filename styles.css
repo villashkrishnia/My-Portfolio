@@ -490,6 +490,7 @@ body {
     /* media header */
     .header {
         flex-direction: column;
+	height:150px;
     }  
     .header .left {
         font-size: 39px;
@@ -510,11 +511,16 @@ body {
     .sticky_nav {
         flex-direction: column;
         text-align: center;
+	background-color: rgb(56, 94, 95);
     }
     
     .sticky_nav a {
         padding: 11px;
         font-size: 26px;
+    }
+	.sticky_nav a:hover {
+        background-color:rgb(31, 54, 54);
+        transition: background-color 0.5s;
     }
 
 
