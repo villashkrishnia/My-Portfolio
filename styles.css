@@ -212,7 +212,7 @@ body {
 .sticky_nav {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(57, 175, 110);
+    background-color: rgba(57, 175, 110,0.8);
 }
 
 .sticky_nav a {
