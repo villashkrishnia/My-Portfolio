@@ -511,7 +511,7 @@ body {
     .sticky_nav {
         flex-direction: column;
         text-align: center;
-	background-color: rgb(56, 94, 95);
+	background-color: rgba(56, 94, 95,0.7);
     }
     
     .sticky_nav a {
